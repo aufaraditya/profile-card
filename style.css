@@ -49,10 +49,6 @@ body {
   text-align: center;
   transition: all 0.6s cubic-bezier(0.8, -0.4, 0.2, 1.7);
   transform-style: preserve-3d;
-  /*&:hover .front__face-photo,
-  &:hover .front__footer {
-    opacity: 1;
-  }*/
 }
 .inner-div:hover .social-icon {
   opacity: 1;
@@ -114,9 +110,6 @@ body {
   background: url("profilepic.jpg") no-repeat;
   background-size: contain;
   overflow: hidden;
-  /* backface-visibility: hidden;
-   transition: all 0.6s cubic-bezier(0.8, -0.4, 0.2, 1.7);
-   z-index: 3;*/
 }
 
 .front__text {
@@ -203,6 +196,10 @@ body {
   font-size: 36px;
 }
 
+.portfolio-wrapper{
+  font-size: 12px;
+}
+
 .social-media-wrapper .social-icon {
   position: relative;
   top: 20px;
@@ -213,6 +210,27 @@ body {
   transition: all 0.4s cubic-bezier(0.3, 0.7, 0.1, 1.9);
 }
 
+.portfolio-wrapper .portfolio {
+  position: absolute;
+  color: #fff;
+  margin-top: 90px;
+  left:32%;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  border: 2px solid #E2894F;
+  padding: 10px 17px;
+  border-radius: 30px;
+  background: #E2894F;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  transition: transform 250ms;
+}
+
+.portfolio-wrapper .portfolio:hover{
+  top: 48%;
+}
 
 .social-media-wrapper .social-icon:nth-child(1) {
   transition-delay: 0.6s;
@@ -229,6 +247,7 @@ body {
 .social-media-wrapper .social-icon:nth-child(5) {
   transition-delay: 1.0s;
 }
+
 
 .fa-brands {
   position: relative;
